@@ -1,0 +1,1 @@
+This project is a Quiz Web App. It has user login/signup with local storage, a dynamic quiz system that takes questions from an API, and a timer with progress tracking. It also shows a leaderboard with score history and a statistics dashboard for total users and quizzes. A contact form with validation is included.
