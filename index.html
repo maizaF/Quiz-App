@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Mee</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Quiz Mee Logo" class="logo-img">
+        <h1>Quiz Mee</h1>
+      </div>
+      <div class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#contact">Contact</a>
+        <span class="userpill" id="userPill">Guest</span>
+        <button class="btn" id="loginBtn">Log in</button>
+        <button class="btn primary" id="signupBtn">Sign up</button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero container">
+    <h2 class="headline">Quiz Mee: Your Path to Smarter Learning</h2>
+    <p class="sub">Take control of your learning with a modern, distraction-free quiz platform. Sharpen your skills, track your progress, and challenge yourself with every question.</p>
+    <div class="cta">
+      <button class="btn primary" onclick="scrollToId('quiz')">Start a Quiz</button>
+      <button class="btn" onclick="scrollToId('services')">Our Features</button>
+    </div>
+    <div class="statrow container">
+      <div class="stat"><strong id="statUsers">0</strong><div class="muted">Users Engaged</div></div>
+      <div class="stat"><strong id="statQuizzes">0</strong><div class="muted">Quizzes Completed</div></div>
+      <div class="stat"><strong id="statPerfects">0</strong><div class="muted">Perfect Scores</div></div>
+    </div>
+  </header>
+
+  <section id="how-it-works" class="container">
+    <h2>How It Works</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>1. Select Your Quiz</h3>
+        <p class="muted">Choose your desired category, difficulty, and number of questions. Your quiz is fully customizable to suit your needs.</p>
+      </div>
+      <div class="card">
+        <h3>2. Start Answering</h3>
+        <p class="muted">Challenge yourself with timed questions. Track your progress with our live progress bar and see how you're performing on the fly.</p>
+      </div>
+      <div class="card">
+        <h3>3. Track Your Progress</h3>
+        <p class="muted">After each quiz, get a detailed score breakdown. All your previous scores are saved locally so you can easily monitor your improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="grid">
+      <h2>About Us</h2>
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p class="muted">At Quiz Mee, we believe that learning should be engaging and effective. Our platform is designed to help you master new topics and reinforce existing knowledge through powerful, customizable quizzes. We're committed to building a tool that makes studying simple, smart, and fun.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Sleek, Intuitive Design</h3>
+          <p class="muted">We've built Quiz Mee from the ground up with a clean and modern user interface. Our smooth design ensures you can focus on the questions without any distractions. The interface is responsive and works flawlessly on any device, from your phone to your desktop.</p>
+        </div>
+        <div class="card">
+          <h3>Personalized Performance Tracking</h3>
+          <p class="muted">Go beyond just getting a score. With our built-in analytics, you can track your progress, review past attempts, and see your best scores. The local leaderboard gives you a quick snapshot of your performance history, helping you see where you've improved and where you can focus next.</p>
+        </div>
+        <div class="card">
+          <h3>Your Privacy, Our Priority</h3>
+          <p class="muted">Your data is important, and we treat it with respect. By default, all your quiz scores and history are stored securely on your own device using local storage. This means your personal information remains private, giving you full control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Our Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>For Learners</h3>
+        <p class="muted">Take on timed quizzes in your favorite subjects. Customize your experience by choosing categories and difficulty levels. Get instant feedback on your answers and a detailed summary of your performance.</p>
+      </div>
+      <div class="card">
+        <h3>For Educators</h3>
+        <p class="muted">Create a personalized learning experience for your students. With advanced options for categories, question count, and difficulty, you can generate practice quizzes tailored to your curriculum.</p>
+      </div>
+      <div class="card">
+        <h3>Comprehensive Analytics</h3>
+        <p class="muted">Dive into your performance data with ease. Our dashboard provides clear insights into your quiz history, including your best attempts, accuracy rates, and overall progress. This helps you study more effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="container">
+    <h2>What Our Users Say</h2>
+    <div class="cards">
+      <div class="card">
+        <p class="muted">"This quiz app is a game-changer! The clean interface makes studying so much easier. I love how I can track my progress."</p>
+        <p><strong>— Ali R.</strong></p>
+      </div>
+      <div class="card">
+        <p class="muted">"I use Quiz Mee every day to prepare for my exams. The timed questions really help me with time management. Highly recommended!"</p>
+        <p><strong>— Fatima S.</strong></p>
+      </div>
+      <div class="card">
+        <p class="muted">"Simple, fast, and effective. The privacy-first approach is a huge plus. This is exactly what I was looking for."</p>
+        <p><strong>— Imran H.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz" class="container">
+    <h2>Practice Quiz</h2>
+    <div class="quiz-wrap">
+      <aside class="sidebox">
+        <label for="category">Category</label>
+        <select id="category"></select>
+
+        <label for="difficulty">Difficulty</label>
+        <select id="difficulty">
+          <option value="any">Any</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <label for="amount">Number of Questions</label>
+        <input id="amount" type="number" min="5" max="25" value="10"/>
+
+        <label for="qTimer">Timer (seconds / question)</label>
+        <input id="qTimer" type="number" min="10" max="90" value="25"/>
+
+        <div class="row" style="margin-top:10px">
+          <button class="btn primary" id="startBtn">Start Quiz</button>
+          <button class="btn" id="resetBtn" title="Clear previous scores">Reset Scores</button>
+        </div>
+
+        <div style="margin-top:14px">
+          <h3 style="margin:0 0 8px">Previous Scores</h3>
+          <ul class="scorelist" id="scoreList"></ul>
+        </div>
+
+        <div style="margin-top:14px">
+          <h3 style="margin:0 0 8px">Leaderboard (This Device)</h3>
+          <ul class="scorelist" id="leaderList"></ul>
+        </div>
+      </aside>
+
+      <main class="qcard">
+        <div class="statusbar">
+          <div class="progress"><span id="progressFill"></span></div>
+          <div class="timer" id="timer">00:00</div>
+        </div>
+        <div class="muted" id="qMeta">Pick options and press Start.</div>
+        <div class="qtext" id="question">Ready when you are.</div>
+        <div class="options" id="options"></div>
+        <div class="controls">
+          <button class="btn" id="nextBtn" style="display:none">Next</button>
+          <button class="btn" id="quitBtn" style="display:none">Quit</button>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Let's Talk</h3>
+        <p class="muted">Have a question, feedback, or a partnership idea? We'd love to hear from you. Fill out the form below, and we'll get back to you as soon as possible.</p>
+        <div class="row" style="margin:8px 0">
+          <input class="input" id="cName" placeholder="Your Name"/>
+          <input class="input" id="cEmail" type="email" placeholder="Email"/>
+        </div>
+        <textarea class="input" id="cMsg" rows="4" placeholder="Your message..."></textarea>
+        <div style="margin-top:10px"><button class="btn primary" onclick="sendContact()">Send</button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+        <p style="margin:0;">&copy; <span id="year"></span> Quiz Mee. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="authModal">
+    <div class="sheet">
+      <h3 id="authTitle">Create your account</h3>
+      <div class="row">
+        <input class="input" id="authName" placeholder="Full Name"/>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <input class="input" id="authEmail" type="email" placeholder="Email"/>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <input class="input" id="authPass" type="password" placeholder="Password"/>
+      </div>
+      <div class="row" style="margin-top:12px; justify-content:flex-end">
+        <button class="btn" onclick="closeAuth()">Cancel</button>
+        <button class="btn primary" id="authActionBtn">Sign up</button>
+      </div>
+      <div class="muted" style="margin-top:10px" id="authHint">Already have an account? <a href="#" onclick="switchAuthMode('login');return false;">Log in</a></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
